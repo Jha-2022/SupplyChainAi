@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f5f6fa;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 260px; /* Width of the sidebar */
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

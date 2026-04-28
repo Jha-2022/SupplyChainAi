@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&display=swap');
+
+.sidebar {
+  width: 260px;
+  background-color: #35858E;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+
+.sidebar-logo-container {
+  display: flex;
+  align-items: center;
+  padding: 0 24px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 24px;
+}
+
+.company-logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.company-logo span {
+  font-weight: 300;
+  color: #d1fae5; /* Soft mint green to match your widgets */
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-item .icon {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sidebar Widgets */
+.sidebar-widgets {
+  margin-top: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.widget-card {
+  border-radius: 12px;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.today-card {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.today-content {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.today-label {
+  font-size: 12px;
+  color: #065f46;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.today-dot {
+  width: 6px;
+  height: 6px;
+  background: #059669;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.today-value {
+  margin: 6px 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #064e3b;
+}
+
+.today-sub {
+  font-size: 12px;
+  color: #059669;
+  font-weight: 600;
+}
+
+.today-image-wrapper {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.today-truck-img {
+  width: 120%;
+  height: auto;
+  object-fit: contain;
+}
+
+.notif-card {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notif-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.notif-icon-wrapper {
+  background: #e0e7ff;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notif-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+.notif-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4f46e5;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: opacity 0.2s;
+}
+
+.notif-link:hover {
+  opacity: 0.8;
+}

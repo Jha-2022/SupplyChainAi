@@ -1,0 +1,172 @@
+.schedule-container {
+  padding: 32px;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.schedule-subtitle {
+  color: #64748b;
+  margin: 4px 0 0 0;
+  font-size: 14px;
+}
+
+.schedule-list {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-list-header {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 3fr 1fr;
+  padding: 16px 24px;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+  font-weight: 600;
+  font-size: 13px;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.schedule-item {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 3fr 1fr;
+  padding: 20px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-item:hover {
+  background: #f8fafc;
+}
+
+.schedule-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.shipment-id {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shipment-route {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.time-val {
+  font-weight: 500;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+.time-sub {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.time-val.delayed {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.progress-wrapper {
+  padding-right: 32px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #475569;
+}
+
+.progress-bar-bg {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #35858E;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-bar-fill.delayed {
+  background: #ef4444;
+}
+
+.progress-bar-fill.completed {
+  background: #10b981;
+}
+
+.status-chip {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+
+.status-chip.on-time {
+  background: #def7ec;
+  color: #03543f;
+}
+
+.status-chip.delayed {
+  background: #fde8e8;
+  color: #9b1c1c;
+}
+
+.status-chip.completed {
+  background: #e1effe;
+  color: #1e429f;
+}
+
+.status-chip.pending {
+  background: #fdf6b2;
+  color: #723b13;
+}
+
+.alert-icon {
+  color: #ef4444;
+}

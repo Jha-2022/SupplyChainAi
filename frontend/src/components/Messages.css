@@ -1,0 +1,342 @@
+.messages-container {
+  display: flex;
+  height: calc(100vh - 80px); /* Account for App layout padding */
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* --- Left Pane (Contacts List) --- */
+.contacts-sidebar {
+  width: 320px;
+  background: #f8fafc;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-header {
+  padding: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.contacts-header h2 {
+  margin: 0 0 16px 0;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #94a3b8;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 10px 10px 36px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #35858E;
+}
+
+.contacts-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.2s;
+  position: relative;
+}
+
+.contact-item:hover {
+  background: #f1f5f9;
+}
+
+.contact-item.active {
+  background: #e0f2f1;
+}
+
+.contact-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #35858E;
+}
+
+.contact-avatar {
+  position: relative;
+  margin-right: 16px;
+}
+
+.avatar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e2e8f0;
+}
+
+.avatar-img.ai-avatar {
+  background: linear-gradient(135deg, #4f46e5, #ec4899);
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.status-indicator {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  background: #10b981;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.status-indicator.offline {
+  background: #94a3b8;
+}
+
+.contact-info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.contact-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-role {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.contact-preview {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- Right Pane (Chat Window) --- */
+.chat-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.chat-header {
+  padding: 20px 32px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.chat-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.chat-status {
+  font-size: 13px;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.chat-actions {
+  display: flex;
+  gap: 16px;
+  color: #64748b;
+}
+
+.action-icon {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.action-icon:hover {
+  color: #0f172a;
+}
+
+.chat-history {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.message-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+.message-wrapper.received {
+  align-self: flex-start;
+}
+
+.message-wrapper.sent {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.message-bubble {
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.message-wrapper.received .message-bubble {
+  background: #f1f5f9;
+  color: #1e293b;
+  border-bottom-left-radius: 4px;
+}
+
+.message-wrapper.sent .message-bubble {
+  background: #35858E;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.message-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.chat-input-area {
+  padding: 24px 32px;
+  border-top: 1px solid #e2e8f0;
+  background: white;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 8px 16px;
+}
+
+.message-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 8px;
+  font-size: 15px;
+  outline: none;
+  color: #1e293b;
+}
+
+.send-btn {
+  background: #35858E;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 8px;
+}
+
+.send-btn:hover {
+  background: #2a6a72;
+}
+
+.no-chat-selected {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  background: #f8fafc;
+}
+
+.no-chat-selected h3 {
+  margin: 16px 0 8px 0;
+  color: #1e293b;
+}
+
+/* AI response markdown styles */
+.ai-bubble {
+  background: #f1f5f9 !important;
+  color: #1e293b !important;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.md-h1 { font-size: 18px; font-weight: 700; color: #0f172a; margin: 12px 0 8px 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+.md-h2 { font-size: 16px; font-weight: 700; color: #0f172a; margin: 12px 0 6px 0; }
+.md-h3 { font-size: 14px; font-weight: 700; color: #35858E; margin: 10px 0 4px 0; }
+.md-p { margin: 4px 0 8px 0; color: #374151; }
+.md-strong { color: #0f172a; font-weight: 700; }
+.md-ul { padding-left: 20px; margin: 4px 0 8px 0; }
+.md-ol { padding-left: 20px; margin: 4px 0 8px 0; }
+.md-li { margin-bottom: 4px; color: #374151; }
+.md-code {
+  background: #e2e8f0;
+  color: #35858E;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
