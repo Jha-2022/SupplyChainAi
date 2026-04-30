@@ -13,3 +13,14 @@ The project integrates Google's Generative AI for intelligent chat assistance an
 
 **Responsive UI:** Modern, component-based frontend built with React.
 
+
+
+### 🛠️ Tech Stack
+**Backend**
+***Runtime:*** Node.js  
+
+***Framework:*** Express.js  
+
+***AI Integration:*** Google Generative AI (@google/genai)  
+
+***Containerization:*** Docker
