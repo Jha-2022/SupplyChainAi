@@ -24,3 +24,11 @@ The project integrates Google's Generative AI for intelligent chat assistance an
 ***AI Integration:*** Google Generative AI (@google/genai)  
 
 ***Containerization:*** Docker
+
+
+**Frontend**
+***Library:*** React.js
+
+***Maps API:*** Google Maps JavaScript API (@react-google-maps/api)
+
+***Styling:*** Modern CSS/React Components
