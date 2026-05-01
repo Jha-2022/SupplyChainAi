@@ -4,8 +4,11 @@ SupplyChainAI
 **SupplyChainAI** is a full-stack application designed to optimize and manage supply chain logistics through AI-powered insights and real-time tracking. The project integrates Google's Generative AI for intelligent chat assistance and Google Maps for visualizing delivery routes.
 
 
+  <p align="center">
+  <img src="frontend/public/h2ssnapshor2.png" width="47%" alt="Dashboard Overview" />
+  <img src="frontend/public/h2ssnapshot1.png" width="47%" alt="Route Mapping" />
+</p>
 
-https://github.com/user-attachments/assets/34cb457d-b5be-4877-8052-575b37e3454a
 
 
 
@@ -22,11 +25,8 @@ https://github.com/user-attachments/assets/34cb457d-b5be-4877-8052-575b37e3454a
     
 *   **Responsive UI**: Modern, component-based frontend built with React.
 
-  <p align="center">
-  <img src="frontend/public/h2ssnapshor2.png" width="47%" alt="Dashboard Overview" />
-  <img src="frontend/public/h2ssnapshot1.png" width="47%" alt="Route Mapping" />
-</p>
-    
+    https://github.com/user-attachments/assets/34cb457d-b5be-4877-8052-575b37e3454a
+
 
 🛠️ Tech Stack
 --------------
