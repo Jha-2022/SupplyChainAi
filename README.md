@@ -15,6 +15,11 @@ SupplyChainAI
 *   **Inventory Dashboard**: Overview of stock levels and warehouse status.
     
 *   **Responsive UI**: Modern, component-based frontend built with React.
+
+  <p align="center">
+  <img src="path/to/your/dashboard-image.png" width="45%" alt="Dashboard Overview" />
+  <img src="path/to/your/map-image.png" width="45%" alt="Route Mapping" />
+</p>
     
 
 🛠️ Tech Stack
