@@ -39,7 +39,7 @@ SupplyChainAI
     
 *   **AI SDK**: `@google/genai` (Google Gemini API)
 
-*   **Environment**: `dotenv` for secure credential management
+*   **Environment**: `.env` for secure credential management
 
 ### Frontend
 
@@ -66,7 +66,7 @@ SupplyChainAI
     
 2.  Install dependencies: `npm install`
     
-3.  Create a `.env` file and add your credentials:
+3.  insde the `.env` file and add your google maps and google gemini api keys:
     `
       PORT = 5000\
       GOOGLE_GENAI_API_KEY=your_gemini_api_key
