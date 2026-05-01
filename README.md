@@ -76,7 +76,7 @@ You can run the backend in a containerized environment:
 📁 Project Structure
 --------------------
 
-* ```
+```
   jha-2022/supplychainai/
 ├── backend/                        # Node.js/Express Server[cite: 1]
 │   ├── node_modules/               # Backend dependencies[cite: 1]
