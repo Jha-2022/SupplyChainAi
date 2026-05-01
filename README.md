@@ -37,9 +37,9 @@ The project integrates Google's Generative AI for intelligent chat assistance an
 
 ## ⚙️ Installation & Setup
 **Prerequisites**
-* Node.js and npm installed.
+  * Node.js and npm installed.
 
-* A Google Cloud Project for AI and Maps API keys.
+  * A Google Cloud Project for AI and Maps API keys.
 
 1. Backend Setup
 Navigate to the directory: `cd backend`
