@@ -33,6 +33,14 @@ SupplyChainAI
 
 ### Backend
 
+*   **Runtime**: Node.js
+    
+*   **Framework**: Express.js
+    
+*   **AI SDK**: `@google/genai` (Google Gemini API)
+
+*   **Environment**: `dotenv` for secure credential management
+
 ### Frontend
 
 *   **Library**: React.js
