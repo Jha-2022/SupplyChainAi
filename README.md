@@ -32,3 +32,42 @@ The project integrates Google's Generative AI for intelligent chat assistance an
 ***Maps API:*** Google Maps JavaScript API (@react-google-maps/api)
 
 ***Styling:*** Modern CSS/React Components
+
+
+## ⚙️ Installation & Setup
+**Prerequisites**
+* Node.js and npm installed.
+
+* A Google Cloud Project for AI and Maps API keys.
+
+1. Backend Setup
+Navigate to the directory: `cd backend`
+
+  
+
+2. Install dependencies: `npm install`
+
+3. Create a `.env` file and add your credentials:
+`
+PORT=5000
+GOOGLE_GENAI_API_KEY=your_gemini_api_key`
+
+Start the server: `node server.js`
+
+2. Frontend Setup
+Navigate to the directory: cd frontend
+
+Install dependencies: npm install
+
+Configure your Google Maps API Key in src/components/RoutesPage.jsx within the <LoadScript> tag.
+
+Start the app:  `npm run dev`
+
+🐳 Docker Support
+You can run the backend in a containerized environment:  
+
+Build the image: docker build -t supplychain-backend ./backend
+
+  
+
+Run the container: docker run -p 5000:5000 supplychain-backend
