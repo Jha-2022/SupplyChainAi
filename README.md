@@ -17,7 +17,7 @@ SupplyChainAI
 *   **Responsive UI**: Modern, component-based frontend built with React.
 
   <p align="center">
-  <img src="path/to/your/dashboard-image.png" width="45%" alt="Dashboard Overview" />
+  <img src="frontend/public/h2ssnapshor2.png" width="45%" alt="Dashboard Overview" />
   <img src="path/to/your/map-image.png" width="45%" alt="Route Mapping" />
 </p>
     
