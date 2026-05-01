@@ -38,17 +38,15 @@ The project integrates Google's Generative AI for intelligent chat assistance an
 ## ⚙️ Installation & Setup
 **Prerequisites**
   * Node.js and npm installed.
-
   * A Google Cloud Project for AI and Maps API keys.
 
-1. Backend Setup
+
+*1. Backend Setup*
 Navigate to the directory: `cd backend`
 
-  
+3. Install dependencies: `npm install`
 
-2. Install dependencies: `npm install`
-
-3. Create a `.env` file and add your credentials:
+4. Create a `.env` file and add your credentials:
 `
 PORT=5000
 GOOGLE_GENAI_API_KEY=your_gemini_api_key`
