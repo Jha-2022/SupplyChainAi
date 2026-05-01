@@ -62,18 +62,28 @@ SupplyChainAI
 
 ### 1\. Backend Setup
 
-3.  Code snippetPORT=5000GOOGLE\_GENAI\_API\_KEY=your\_gemini\_api\_key
+1.  Navigate to the directory: `cd backend`
+    
+2.  Install dependencies: `npm install`
+    
+3.  Create a `.env` file and add your credentials:
+    `
+      PORT = 5000\
+      GOOGLE_GENAI_API_KEY=your_gemini_api_key
+    `
+    
+5.  Start the server: `node server.js`
     
 
 ### 2\. Frontend Setup
 
-1.  Navigate to the directory: cd frontend
+1.  Navigate to the directory: `cd frontend`
     
-2.  Install dependencies: npm install
+2.  Install dependencies: `npm install`
     
-3.  Configure your Google Maps API Key in src/components/RoutesPage.jsx within the tag.
+3.  Configure your Google Maps API Key in `src/components/RoutesPage.jsx` within the tag.
     
-4.  Start the app: npm run dev
+4.  Start the app:  `npm run dev`
     
 
 🐳 Docker Support
