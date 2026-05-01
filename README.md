@@ -76,4 +76,31 @@ You can run the backend in a containerized environment:
 📁 Project Structure
 --------------------
 
-*   /frontend: React components, state management, and mapping interface.
+* ```
+  jha-2022/supplychainai/
+├── backend/                        # Node.js/Express Server[cite: 1]
+│   ├── node_modules/               # Backend dependencies[cite: 1]
+│   ├── .env                        # Environment variables (API Keys)[cite: 1]
+│   ├── Dockerfile                  # Containerization configuration[cite: 1]
+│   ├── package-lock.json           # Locked dependency versions[cite: 1]
+│   ├── package.json                # Project dependencies and scripts[cite: 1]
+│   └── server.js                   # Express server entry point[cite: 1]
+└── frontend/                       # React/Vite Client-side Application
+    ├── node_modules/               # Frontend dependencies
+    ├── public/                     # Static assets
+    ├── src/                        # Source code
+    │   ├── components/             # Reusable UI Components
+    │   │   ├── Chat.jsx            # AI Logistics Assistant interface
+    │   │   ├── Dashboard.jsx       # Inventory & status overview
+    │   │   ├── OrdersPage.jsx      # Order management table
+    │   │   └── RoutesPage.jsx      # Google Maps route visualization
+    │   ├── App.css                 # Global styles
+    │   ├── App.jsx                 # Main application component
+    │   ├── index.css               # Base styles
+    │   └── main.jsx                # React application entry point
+    ├── .gitignore                  # Git exclusion rules
+    ├── index.html                  # HTML template
+    ├── package-lock.json           # Locked dependency versions
+    ├── package.json                # Project dependencies and scripts
+    └── vite.config.js              # Vite build configuration
+  ```
