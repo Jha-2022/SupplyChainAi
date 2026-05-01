@@ -18,7 +18,7 @@ SupplyChainAI
 
   <p align="center">
   <img src="frontend/public/h2ssnapshor2.png" width="45%" alt="Dashboard Overview" />
-  <img src="path/to/your/map-image.png" width="45%" alt="Route Mapping" />
+  <img src="frontend/public/h2ssnapshot1.png" width="45%" alt="Route Mapping" />
 </p>
     
 
